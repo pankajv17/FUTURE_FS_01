@@ -1,0 +1,80 @@
+/* src/pages/Resume.css */
+.resume-section {
+  padding: 20px;
+  margin:  0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+
+.resume-block {
+  margin-bottom: 0px;
+}
+
+.resume-block h2 {
+  font-size: 24px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  color: #007bff;
+}
+
+.resume-item {
+  margin-bottom: 20px;
+}
+
+.resume-item h3 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.item-meta {
+  font-style: italic;
+  color: #666;
+  font-size: 14px;
+}
+
+.skills-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #333;
+}
+
+.resume-download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.resume-download a {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-download a:hover {
+  background-color: #0056b3;
+}

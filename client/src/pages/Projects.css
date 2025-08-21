@@ -1,0 +1,149 @@
+/* === Base === */
+.projects-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.theme-toggle {
+  background-color: transparent;
+  border: 2px solid #666;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #ddd;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.filter-btn {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.filter-btn:hover {
+  background-color: #c0c0c0;
+}
+
+.filter-btn.active {
+  background-color: #1a73e8;
+  color: white;
+}
+
+/* === Light Theme === */
+.projects-container.light {
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+.projects-container.light .project-card {
+  background-color: white;
+}
+
+/* === Dark Theme === */
+.projects-container.dark {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.projects-container.dark .project-card {
+  background-color: #2a2a2a;
+}
+
+.projects-container.dark .theme-toggle {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+.projects-container.dark .theme-toggle:hover {
+  background-color: #333;
+}
+
+.projects-container.dark .filter-btn {
+  background-color: #444;
+  color: #ccc;
+}
+
+.projects-container.dark .filter-btn.active {
+  background-color: #4f8ffb;
+  color: #fff;
+}
+
+/* === Grid & Cards === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
