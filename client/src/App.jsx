@@ -8,10 +8,6 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Footer from "./components/Footer"; 
 
-//  const useEffect(() => {
-//   AOS.init({ duration: 1000 });
-// }, []);
-
 function App() {
   return (
     <Router>
@@ -22,16 +18,10 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
-       
       </Routes>
       <Footer />
     </Router>
-   
   );
 }
- 
 
-       
- 
 export default App;
-

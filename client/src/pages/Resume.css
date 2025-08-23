@@ -1,80 +1,138 @@
-/* src/pages/Resume.css */
+/* Resume.css */
+
+/* Overall Section */
 .resume-section {
-  padding: 20px;
-  margin:  0;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f0f2f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 4rem 2rem;
+  background: #f9fafb; /* light background */
+  font-family: "Poppins", sans-serif;
+  color: #222;
 }
 
+/* Container */
 .resume-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Title */
 .resume-title {
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 36px;
-  color: #333;
+  margin-bottom: 3rem;
+  color: #1f2937;
+  font-weight: 700;
+  position: relative;
 }
 
+.resume-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #3b82f6; /* blue accent */
+  margin: 0.5rem auto 0;
+  border-radius: 3px;
+}
+
+/* Resume Block (each section) */
 .resume-block {
-  margin-bottom: 0px;
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.resume-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Section Headings */
 .resume-block h2 {
-  font-size: 24px;
-  border-bottom: 2px solid #007bff;
-  display: inline-block;
-  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2563eb;
+  border-left: 4px solid #2563eb;
+  padding-left: 0.75rem;
+  font-weight: 600;
 }
 
+/* Resume Item */
 .resume-item {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .resume-item h3 {
-  font-size: 18px;
-  color: #222;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
 }
 
 .item-meta {
-  font-style: italic;
-  color: #666;
-  font-size: 14px;
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
 }
 
+/* Skills List */
 .skills-list {
-  list-style-type: square;
-  padding-left: 20px;
-  color: #333;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
 }
 
+.skills-list li {
+  background: #eff6ff;
+  color: #1e3a8a;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+  background: #dbeafe;
+}
+
+/* Download Button */
 .resume-download {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
-.resume-download a {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 6px;
+.download-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
   text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.resume-download a:hover {
-  background-color: #0056b3;
+.download-btn:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 3rem 1rem;
+  }
+
+  .resume-title {
+    font-size: 2rem;
+  }
+
+  .resume-block {
+    padding: 1.5rem;
+  }
 }

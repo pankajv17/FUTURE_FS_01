@@ -1,21 +1,28 @@
-import React from "react";
+// main.jsx
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-// main.jsx
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import App from './App.jsx';
-// import './index.css';
-// import 'aos/dist/aos.css'; // <-- Add this
-// import AOS from 'aos';
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
 
-// AOS.init(); // <-- Add this to initialize
+const Root = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration (ms)
+      once: true,     // Run animation only once
+      easing: "ease-in-out", // Smooth easing
+    });
+  }, []);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  return (
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Root />);
+
 
 
 

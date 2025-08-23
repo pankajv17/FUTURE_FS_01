@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Library Management",
     description: "Backend dashboard for library using Node.js & MongoDB.",
-    link: "https://your-library-link.com",
+    link: "https://future-fs-03-cto4.onrender.com",
     image: "/assets/lib.png",
     category: "Backend",
   },
