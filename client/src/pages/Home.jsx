@@ -41,9 +41,6 @@ function Home() {
             >
               <FaLinkedin />
             </a>
-            <a href="mailto:your@email.com">
-              <FaEnvelope />
-            </a>
           </div>
         </div>
 
@@ -77,3 +74,4 @@ function Home() {
 }
 
 export default Home;
+
