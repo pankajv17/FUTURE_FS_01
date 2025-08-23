@@ -8,7 +8,7 @@ const Message = require("./models/Message");
 const app = express();
 
 // Middleware
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://future-fs-01-server-686q.onrender.com" }));
 app.use(express.json());
 
 // MongoDB connection
@@ -36,3 +36,4 @@ app.post("/api/contact", async (req, res) => {
 });
 
 app.listen(5000, () => console.log("🚀 Server running on port 5000"));
+
